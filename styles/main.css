@@ -1,0 +1,36 @@
+/* Reset and mobile-first base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.5; color: #333; max-width: 100%; }
+img { max-width: 100%; height: auto; }
+
+/* Nav */
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.logo { font-size: 1.5rem; font-weight: bold; text-decoration: none; color: #007bff; }
+.nav-list { display: flex; list-style: none; gap: 1rem; }
+.nav-list a { text-decoration: none; color: #333; }
+
+/* CTAs - Thumb-friendly */
+.cta-button { background: #007bff; color: white; border: none; padding: 0.75rem 1.5rem; font-size: 1rem; border-radius: 5px; cursor: pointer; display: block; margin: 1rem auto; max-width: 100%; }
+.cta-button.secondary { background: #6c757d; }
+.sticky { position: fixed; top: 0; left: 50%; transform: translateX(-50%); z-index: 100; width: 90%; text-align: center; }
+
+/* Sections */
+.hero, .about, .services, .emergency, .contact { padding: 2rem 1rem; text-align: center; }
+h1 { font-size: 2rem; margin-bottom: 1rem; color: #007bff; }
+h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+ul { list-style: none; text-align: left; max-width: 600px; margin: 0 auto; }
+ul li { padding: 0.5rem; border-bottom: 1px solid #eee; }
+.hero-img, .about-img, .emergency-img { margin: 1rem 0; }
+
+/* Trust and testimonials */
+.trust ul, .service-list { text-align: left; }
+.testimonials blockquote { font-style: italic; padding: 1rem; background: #f8f9fa; border-left: 4px solid #007bff; }
+
+/* Footer */
+footer { background: #333; color: white; text-align: center; padding: 1rem; }
+footer a { color: #007bff; }
+
+/* Mobile tweaks - already first, but enhance */
+@media (min-width: 768px) { .nav-list { gap: 2rem; } h1 { font-size: 2.5rem; } }
+
+/* Lighthouse-friendly: No unused CSS, semantic classes */
