@@ -1,58 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>24/7 Home Repair SEMO | Emergency Repairs Southeast Missouri</title>
-  <meta name="description" content="Emergency home repair service in Southeast Missouri. 24/7 availability for plumbing, electrical, drywall, and storm damage. Call 573-282-0119.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>24/7 Home Repair SEMO | Emergency Home Repairs in Southeast Missouri</title>
+  <meta name="description" content="Fast, reliable 24/7 emergency home repairs across Southeast Missouri. Roofing, plumbing, electrical, storm damage, drywall, painting. Call now: (573) 282-0119.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="assets/logo.png">
+  <meta name="theme-color" content="#111111">
+  <!-- GA4: replace G-XXXX with your measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "24/7 Home Repair SEMO",
+    "image": "https://www.247homerepairsemo.com/assets/logo.png",
+    "telephone": "+1-573-282-0119",
+    "email": "danny@247homerepairsemo.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12138 State Highway H",
+      "addressLocality": "Marble Hill",
+      "addressRegion": "MO",
+      "postalCode": "63764",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }],
+    "areaServed": ["Cape Girardeau","Sikeston","Dexter","Puxico","Poplar Bluff","Advance","Jackson","Bollinger County","Stoddard County","Scott County","Cape Girardeau County","Southeast Missouri"],
+    "url": "https://www.247homerepairsemo.com"
+  }
+  </script>
 </head>
 <body>
-  <header class="navbar">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="24/7 Home Repair SEMO logo"></a>
-    <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="emergency.html">Emergency</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="tel:5732820119" class="cta">Call 24/7</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="24/7 Home Repair SEMO logo" class="logo">
+        <span>24/7 Home Repair SEMO</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="btn btn--sm">Request Service</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" style="--hero:url('assets/hero-roof-tarp.jpg')">
     <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Emergency Home Repair — 24/7/365</h1>
-      <p>Serving Southeast Missouri: Cape Girardeau • Sikeston • Dexter • Marble Hill • Poplar Bluff</p>
-      <a href="contact.html" class="btn-primary">Request Service</a>
+    <div class="container hero__content">
+      <h1>Emergency Home Repair — Anytime, Anywhere in Southeast Missouri</h1>
+      <p>Roof leaks, busted pipes, power issues, storm damage — we’re on-call 24/7. Fast response. Fair pricing. Rock solid work.</p>
+      <div class="cta-row">
+        <a href="tel:+15732820119" class="btn">📞 Call Now (573) 282-0119</a>
+        <a href="contact.html" class="btn btn--outline">Request Service</a>
+      </div>
+      <ul class="trust">
+        <li>⚡ 24/7 Emergency Response</li>
+        <li>🧰 Full-Service Repair Crew</li>
+        <li>📍 Locally Owned & Insured</li>
+      </ul>
     </div>
   </section>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="card"><h3>Plumbing</h3><p>Leaks, burst pipes, and water heaters fixed fast.</p></div>
-      <div class="card"><h3>Electrical</h3><p>Breaker issues, lighting, and urgent electrical repair.</p></div>
-      <div class="card"><h3>Drywall & Painting</h3><p>Professional drywall, finishing, and paint work.</p></div>
-      <div class="card"><h3>Roof & Storm Damage</h3><p>Roof leaks, shingle replacement, and storm cleanup.</p></div>
+  <main id="main">
+    <section class="quick-services container">
+      <h2>Rapid Response Services</h2>
+      <div class="grid cards">
+        <article class="card">
+          <img src="assets/services-roofing.jpg" alt="Roof repair crew replacing damaged shingles">
+          <h3>Roofing & Leaks</h3>
+          <p>Emergency tarping, leak tracing, shingle replacement, sheathing repair.</p>
+        </article>
+        <article class="card">
+          <img src="assets/services-plumbing.jpg" alt="Plumber fixing burst pipe under sink">
+          <h3>Plumbing</h3>
+          <p>Burst pipes, shut-off valves, water heater swaps, drain fixes.</p>
+        </article>
+        <article class="card">
+          <img src="assets/services-electrical.jpg" alt="Burned electrical outlet close-up">
+          <h3>Electrical</h3>
+          <p>Outlet/fixture failures, breaker issues, safe temporary restores.</p>
+        </article>
+        <article class="card">
+          <img src="assets/services-storm.jpg" alt="Tree fallen onto roof after a storm">
+          <h3>Storm Damage</h3>
+          <p>Tarping, board‑ups, debris removal, immediate weatherproofing.</p>
+        </article>
+      </div>
+      <div class="center">
+        <a href="services.html" class="btn btn--ghost">See All Services</a>
+      </div>
+    </section>
+
+    <section class="band band--dark">
+      <div class="container band__inner">
+        <h2>Why Southeast Missouri Calls Us</h2>
+        <ul class="pill-list">
+          <li>Live answer 24/7</li>
+          <li>Same‑day onsite in most cases</li>
+          <li>Clear pricing before work starts</li>
+          <li>Licensed & insured craftsmanship</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container two-col">
+      <div>
+        <h2>Locally Owned. Rock Solid Reliable.</h2>
+        <p>We’re neighbors, not a franchise. From Cape to Poplar Bluff, our crew handles urgent repairs and follow‑through rebuilds with professional quality and straight talk.</p>
+        <ul class="checklist">
+          <li>Emergency stabilization + permanent fixes</li>
+          <li>Drywall, painting, carpentry & finish work</li>
+          <li>Roofing, plumbing, electrical coordination</li>
+        </ul>
+        <div class="cta-row">
+          <a href="tel:+15732820119" class="btn">Call 24/7</a>
+          <a href="contact.html" class="btn btn--outline">Message the Team</a>
+        </div>
+      </div>
+      <div class="feature-card">
+        <h3>Coverage Area</h3>
+        <p>Cape Girardeau • Sikeston • Dexter • Puxico • Poplar Bluff • Advance • Jackson • Bollinger, Stoddard, Scott & Cape Counties.</p>
+        <h3 class="mt">Business Hours</h3>
+        <p>We don’t take breaks — we take calls. <strong>Open 24/7/365.</strong></p>
+      </div>
+    </section>
+
+    <section class="container testimonials">
+      <h2>What Homeowners Say</h2>
+      <div class="grid quotes">
+        <blockquote>“Showed up the same night of the storm and had our roof tarped in under an hour.” <cite>— Cape Girardeau</cite></blockquote>
+        <blockquote>“No BS pricing. Fixed the leak and patched the drywall clean.” <cite>— Poplar Bluff</cite></blockquote>
+        <blockquote>“Professional, fast, and respectful. Saved our floors from water damage.” <cite>— Dexter</cite></blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/logo.png" alt="24/7 Home Repair SEMO logo small" class="logo-sm">
+        <p>Fast, reliable emergency repairs across Southeast Missouri.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+15732820119">(573) 282-0119</a><br>
+        <a href="mailto:danny@247homerepairsemo.com">danny@247homerepairsemo.com</a><br>
+        12138 State Highway H, Marble Hill, MO 63764</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="list">
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </section>
-
-  <section class="trust">
-    <h2>Why Choose 24/7 Home Repair SEMO</h2>
-    <ul>
-      <li>✅ Licensed & Insured</li>
-      <li>✅ Emergency Service 24/7/365</li>
-      <li>✅ Locally Owned & Operated</li>
-      <li>✅ Transparent Pricing & Free Estimates</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 24/7 Home Repair SEMO — <a href="mailto:danny@247homerepairsemo.com">danny@247homerepairsemo.com</a> — <a href="tel:5732820119">573-282-0119</a></p>
+    <div class="copy">© <span id="y"></span> 24/7 Home Repair SEMO. All rights reserved.</div>
   </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
