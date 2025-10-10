@@ -117,3 +117,14 @@ footer a:hover {
 @media (min-width: 768px) {
   .hero h1 { font-size: 2.5rem; }
 }
+/* --- Logo sizing and alignment --- */
+.logo img {
+  height: 55px;
+  width: auto;
+  vertical-align: middle;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
