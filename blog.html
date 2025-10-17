@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | 24/7 Home Repair SEMO</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #111;
+      background-color: #fff;
+      margin: 0;
+    }
+
+    header {
+      background-color: #b60000;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #f4f4f4;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      color: #b60000;
+      font-size: 2rem;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .post {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      background: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .post img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .post-content h2 {
+      color: #b60000;
+      margin-top: 0;
+    }
+
+    .post-content p {
+      line-height: 1.6;
+    }
+
+    .cta-banner {
+      background-color: #b60000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .cta-banner a {
+      display: inline-block;
+      background-color: white;
+      color: #b60000;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-banner a:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">24/7 Home Repair SEMO</a>
+  </header>
+
+  <section class="hero">
+    <h1>24/7 Home Repair Tips & Updates</h1>
+    <p>Quick, helpful articles to keep your home safe and running strong across Southeast Missouri.</p>
+  </section>
+
+  <section class="blog-container">
+
+    <article class="post">
+      <img src="assets/blog1.jpg" alt="Emergency repair team working at night" />
+      <div class="post-content">
+        <h2>5 Most Common Emergency Home Repairs in Southeast Missouri</h2>
+        <p><strong>October 2025</strong> — From storm damage to burst pipes, these are the top calls we get in SEMO — and how you can prevent them before they turn into expensive repairs.</p>
+        <a href="#call" style="color:#b60000; font-weight:bold;">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="assets/blog2.jpg" alt="Storm damage to a roof" />
+      <div class="post-content">
+        <h2>Storm Damage? Here’s What to Check Before Calling a Pro</h2>
+        <p><strong>October 2025</strong> — Missouri weather can go from calm to chaos fast. Here’s how to inspect your roof, attic, and walls after a storm before bigger issues hit.</p>
+        <a href="#call" style="color:#b60000; font-weight:bold;">Read More →</a>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="assets/blog3.jpg" alt="Plumber fixing a leak" />
+      <div class="post-content">
+        <h2>Why Plumbing Leaks Get Worse Overnight</h2>
+        <p><strong>October 2025</strong> — Leaks don’t sleep. Temperature drops and pressure changes can turn a slow drip into a full-blown flood by morning — here’s what to do fast.</p>
+        <a href="#call" style="color:#b60000; font-weight:bold;">Read More →</a>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="cta-banner" id="call">
+    <h2>Need emergency repair service now?</h2>
+    <p>We’re on call 24/7 across Southeast Missouri.</p>
+    <a href="tel:5732820119">📞 Call (573) 282-0119</a>
+    <br /><br />
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5AO0P4R7MjZt42Ssjz0wRLW_YFcepvXcRHBKGwBYJa1PMsg/viewform?usp=header" target="_blank">Request Service Online</a>
+  </section>
+
+  <footer>
+    &copy; 2025 24/7 Home Repair SEMO | Serving Southeast Missouri 24 Hours a Day
+  </footer>
+
+</body>
+</html>
