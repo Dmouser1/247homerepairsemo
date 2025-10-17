@@ -3,21 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FAQs | 24/7 Home Repair SEMO</title>
-  <meta name="description" content="Common questions about our 24/7 home repair, emergency plumbing, roofing, and electrical services across Southeast Missouri. Available anytime.">
+  <title>FAQ | 24/7 Home Repair SEMO | Emergency Service Questions</title>
+  <meta name="description" content="Find answers to common questions about 24/7 Home Repair SEMO’s emergency plumbing, roofing, electrical, and general home repair services across Southeast Missouri." />
+
+  <!-- Fonts & Favicons -->
+  <meta name="theme-color" content="#c1121f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512x512.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="FAQ | 24/7 Home Repair SEMO" />
+  <meta property="og:description" content="Answers to frequently asked questions about emergency plumbing, roofing, and electrical services by 24/7 Home Repair SEMO — serving Southeast Missouri 24/7." />
+  <meta property="og:image" content="https://www.247homerepairsemo.com/assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.247homerepairsemo.com/faq.html" />
+
+  <!-- Google tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y477RYX1F8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y477RYX1F8');
+  </script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Internal Styles -->
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #111; }
     header { background: #b60000; color: white; padding: 1rem; text-align: center; }
-    section.faq { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
     h1 { color: #b60000; text-align: center; }
+    section.faq { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
     details { background: #f4f4f4; border-radius: 8px; margin-bottom: 1rem; padding: 1rem; }
-    details summary { font-weight: bold; cursor: pointer; }
+    summary { font-weight: bold; cursor: pointer; }
     details[open] { border-left: 4px solid #b60000; }
     footer { background: #111; color: #ccc; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
 
-  <!-- FAQ Schema -->
+  <!-- FAQ Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,27 +58,42 @@
       {
         "@type": "Question",
         "name": "Do you charge extra for after-hours emergency calls?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. Our 24/7 service rates are consistent regardless of time. We provide honest, upfront pricing — day or night." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Our 24/7 service rates are consistent regardless of time. We provide upfront pricing with no hidden fees."
+        }
       },
       {
         "@type": "Question",
         "name": "What areas in Southeast Missouri do you serve?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We cover all of Southeast Missouri including Cape Girardeau, Dexter, Sikeston, Puxico, Marble Hill, Advance, and Poplar Bluff." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We cover all of Southeast Missouri including Cape Girardeau, Dexter, Sikeston, Puxico, Poplar Bluff, and surrounding communities."
+        }
       },
       {
         "@type": "Question",
         "name": "How soon can you respond to an emergency call?",
-        "acceptedAnswer": { "@type": "Answer", "text": "In most cases, we can arrive within 1 hour of your call depending on location and crew availability." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, we can arrive within 1 hour of your call depending on your location and current job volume."
+        }
       },
       {
         "@type": "Question",
         "name": "Do you handle both residential and commercial repairs?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. We’re equipped for both residential and small commercial jobs including plumbing, electrical, roofing, and drywall repairs." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We’re equipped for both residential and small commercial emergency repairs."
+        }
       },
       {
         "@type": "Question",
         "name": "What payment methods do you accept?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We accept cash, checks, and all major credit cards via Square. Deposits can also be made online securely." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We accept cash, checks, and all major credit cards. Deposits can also be paid through Square."
+        }
       }
     ]
   }
