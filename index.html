@@ -263,130 +263,99 @@
   ]
 }
 </script>
-<!-- START: Fixed Service Schema -->
+<!-- START: LocalBusiness & Service Schema for 24/7 Home Repair SEMO -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Emergency Home Repair",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "24/7 Home Repair SEMO",
-    "telephone": "+1-573-282-0119",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "701 West Duckett Street",
-      "addressLocality": "Advance",
-      "addressRegion": "MO",
-      "postalCode": "63730",
-      "addressCountry": "US"
-    }
-  },
-  "areaServed": ["Southeast Missouri"],
-  "description": "Fast 24-hour emergency repair services for plumbing, roofing, electrical, and structural damage throughout Southeast Missouri.",
+  "@type": "LocalBusiness",
+  "name": "24/7 Home Repair SEMO",
+  "image": "https://www.247homerepairsemo.com/assets/logo.png",
   "url": "https://www.247homerepairsemo.com",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "USD",
-    "price": "Varies by project",
-    "availability": "https://schema.org/InStock"
-  }
+  "telephone": "+1-573-282-0119",
+  "priceRange": "$$",
+  "description": "24/7 Home Repair SEMO provides around-the-clock home repair and emergency restoration services across Southeast Missouri, including roofing, plumbing, electrical, drywall, and storm damage repair.",
+  "email": "danny@247homerepairsemo.com",
+  "founder": {
+    "@type": "Person",
+    "name": "Danny Mouser"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.1,
+      "longitude": -89.9
+    },
+    "geoRadius": 90000
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday","Tuesday","Wednesday",
+      "Thursday","Friday","Saturday","Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "hasMap": "https://www.google.com/maps/place/24+7+Home+Repair+SEMO",
+  "sameAs": [
+    "https://www.facebook.com/247HomeRepairSEMO",
+    "https://www.google.com/maps/place/24+7+Home+Repair+SEMO"
+  ]
 }
 </script>
 
+<!-- INDIVIDUAL SERVICE SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Roof Repair",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "24/7 Home Repair SEMO",
-    "telephone": "+1-573-282-0119",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "701 West Duckett Street",
-      "addressLocality": "Advance",
-      "addressRegion": "MO",
-      "postalCode": "63730",
-      "addressCountry": "US"
+  "@graph": [
+    {
+      "@type": "Service",
+      "serviceType": "Emergency Home Repair",
+      "provider": { "@type": "LocalBusiness", "name": "24/7 Home Repair SEMO" },
+      "areaServed": "Southeast Missouri",
+      "description": "Fast 24-hour emergency response for plumbing, electrical, roofing, and structural repairs.",
+      "url": "https://www.247homerepairsemo.com/services#emergency"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Roof Repair",
+      "provider": { "@type": "LocalBusiness", "name": "24/7 Home Repair SEMO" },
+      "description": "Residential and commercial roof repairs, storm-damage restoration, and leak prevention.",
+      "url": "https://www.247homerepairsemo.com/services#roof"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Plumbing Repair",
+      "provider": { "@type": "LocalBusiness", "name": "24/7 Home Repair SEMO" },
+      "description": "Pipe leak repair, fixture replacement, and water-damage mitigation across Southeast Missouri.",
+      "url": "https://www.247homerepairsemo.com/services#plumbing"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Electrical Repair",
+      "provider": { "@type": "LocalBusiness", "name": "24/7 Home Repair SEMO" },
+      "description": "Breaker replacement, wiring repair, and power restoration for residential and small commercial clients.",
+      "url": "https://www.247homerepairsemo.com/services#electrical"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Drywall Repair and Finishing",
+      "provider": { "@type": "LocalBusiness", "name": "24/7 Home Repair SEMO" },
+      "description": "Drywall hanging, patching, mudding, and finishing for remodels and repairs.",
+      "url": "https://www.247homerepairsemo.com/services#drywall"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Storm Damage Restoration",
+      "provider": { "@type": "LocalBusiness", "name": "24/7 Home Repair SEMO" },
+      "description": "Complete restoration after wind, water, and storm damage, available 24/7 throughout Southeast Missouri.",
+      "url": "https://www.247homerepairsemo.com/services#storm"
     }
-  },
-  "areaServed": ["Cape Girardeau", "Dexter", "Poplar Bluff", "Puxico", "Advance"],
-  "description": "Roof repair and storm-damage restoration for residential and commercial properties in Southeast Missouri.",
-  "url": "https://www.247homerepairsemo.com/services#roof-repair"
+  ]
 }
 </script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Plumbing Repair",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "24/7 Home Repair SEMO",
-    "telephone": "+1-573-282-0119",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "701 West Duckett Street",
-      "addressLocality": "Advance",
-      "addressRegion": "MO",
-      "postalCode": "63730",
-      "addressCountry": "US"
-    }
-  },
-  "areaServed": ["Sikeston", "Dexter", "Advance", "Poplar Bluff"],
-  "description": "24-hour plumbing leak detection, pipe replacement, and water damage prevention services.",
-  "url": "https://www.247homerepairsemo.com/services#plumbing"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Electrical Repair",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "24/7 Home Repair SEMO",
-    "telephone": "+1-573-282-0119",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "701 West Duckett Street",
-      "addressLocality": "Advance",
-      "addressRegion": "MO",
-      "postalCode": "63730",
-      "addressCountry": "US"
-    }
-  },
-  "description": "Electrical troubleshooting, breaker repair, and lighting installation for homes and small businesses.",
-  "url": "https://www.247homerepairsemo.com/services#electrical"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Drywall Repair and Finishing",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "24/7 Home Repair SEMO",
-    "telephone": "+1-573-282-0119",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "701 West Duckett Street",
-      "addressLocality": "Advance",
-      "addressRegion": "MO",
-      "postalCode": "63730",
-      "addressCountry": "US"
-    }
-  },
-  "description": "Professional drywall hanging, taping, mudding, and finishing for renovations and damage repair.",
-  "url": "https://www.247homerepairsemo.com/services#drywall"
-}
-</script>
-<!-- END: Fixed Service Schema -->
+<!-- END: LocalBusiness & Service Schema -->
 </body>
 </html>
